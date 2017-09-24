@@ -4,6 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+
 /**
  * Unit test for simple App.
  */
@@ -35,4 +36,22 @@ public class AppTest
     {
         assertTrue( true );
     }
+    
+    
+    public void testSum()
+    {
+    	System.out.println("This is a JUnit test of a sum.");
+        assertEquals(9, App.sum(5, 4));
+    }
+    
+    public void testIsGreeting() {
+
+    	System.out.println("This is a Junit test of greeting");
+    	App.setGreeting("welcome");
+
+        assertEquals("welcome", App.getGreeting());
+
+    } 
+    
+    
 }
